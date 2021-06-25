@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+
 import { BottomWrapper } from './footerStyles'
 
 export default function Footer() {

@@ -7,6 +7,6 @@ export default function axiosWithAuth() {
         headers: {
             authorization: token, 
         },
-        baseURL: ""
+        baseURL: "https://herhealthjournal.netlify.app"
     });
 };
