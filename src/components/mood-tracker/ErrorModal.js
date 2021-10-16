@@ -1,5 +1,6 @@
 import Button from '../mood-tracker/Button';
-
+import Date from '../mood-tracker/Date';
+    
 const ErrorModal = (props) => {
     const confirm = () => {
       props.onConfirm();
