@@ -1,0 +1,49 @@
+/* Mood Tracker Button */
+.button {
+    font: inherit;
+    font-weight: 500;
+    color: #000;
+    background-color: #f88897;
+  
+    border: 1px solid #fc4359;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+    padding: 1.6rem 3.2rem;
+    cursor: pointer;
+  
+    transition: all 0.2s;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: #f88897;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Error Modal */
+  .header h2 {
+    color: #d598a0;
+    font-size: 3.2rem;
+    font-style: italic;
+  }
+  
+  .content {
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 3.2rem;
+    font-style: italic;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.8rem;
+  
+    justify-content: center;
+  
+    font-size: 2rem;
+  }
+  
+  .error-date {
+    justify-content: center !important;
+  }
