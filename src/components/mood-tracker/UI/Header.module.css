@@ -1,0 +1,30 @@
+.heading-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+
+  font-family: 'Merriweather', serif;
+
+  letter-spacing: -0.4rem;
+
+  margin-bottom: 5.4rem;
+  margin-top: 1.2rem;
+
+  text-align: center;
+}
+
+.heading-primary--first-word {
+  font-size: 8.8rem;
+  font-weight: 500;
+  color: #ef476f;
+  font-family: 'Merriweather', serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heading-primary--second-word {
+  font-size: 7.4rem;
+  font-weight: 500;
+  color: #ef476f;
+  font-family: 'Merriweather', serif;
+}

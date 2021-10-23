@@ -1,0 +1,23 @@
+.button {
+    font: inherit;
+    font-weight: 500;
+    color: #000;
+    background-color: #ffd166;
+  
+    border: none;
+    border-radius: 9px;
+    border: 1px solid aa7a80; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+    padding: 1.6rem 3.2rem;
+    cursor: pointer;
+  
+    transition: all 0.2s;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: #fcb511;
+    transform: translateY(-2%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }

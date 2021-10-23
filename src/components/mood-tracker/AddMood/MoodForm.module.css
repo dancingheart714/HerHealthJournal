@@ -1,0 +1,47 @@
+.new-mood-main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: 2.4rem;
+  }
+  
+  .new-mood-main-form label {
+    font-weight: 500;
+  }
+  
+  .new-mood-main-form select,
+  .new-mood-main-form select option,
+  .new-mood-main-form input,
+  .new-mood-main-form textarea {
+    font-family: 'Merriweather', serif;
+    font-size: inherit;
+    font-weight: 500;
+    border: none;
+  }
+  
+  .new-mood-main-form textarea {
+    resize: none;
+    font-style: italic;
+    padding-left: 2px;
+  
+    margin-bottom: 1.6rem;
+  }
+  
+  .new-mood-main-form textarea::placeholder {
+    color: #073B4C;
+  }
+  
+  .new-mood-form-section {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-bottom: 0.8rem; 
+  }
+  
+  .new-mood-form-section:last-child {
+    margin-bottom: 3.2rem;
+  }
+  
+  .new-mood-main-form *:focus {
+    outline: 3px solid #118AB2;
+  }

@@ -1,44 +1,34 @@
-/*Colors used:
-    #EF476F
-    #FFD166
-    #118AB2
-    #073B4C
-  Font used: Merriweather
-  */
-
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 65%;
-}
-
-body {
-  font-family: 'Merriweather', serif;
-  line-height: 1;
-  font-weight: 400;
-  background-color: whitesmoke;
-}
-
-.outside-container {
-  display: flex;
-  justify-content: center;
-  gap: 4.2rem;
-}
-
-.container {
-  margin-left: 4.8rem;
-}
-
-.undefined-background {
-  background-color: transparent;
-}
-
+.month-tracker {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
   
+    align-self: start;
+  }
+  
+  .week-day {
+    justify-self: center;
+    align-self: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .month-header {
+    font-size: 3.6rem;
+    font-style: italic;
+    font-weight: 600;
+  
+    text-align: center;
+  }
+  
+  .month-name {
+    color: #073B4C;
+  }
+
+
+    
 /*Very Happy*/
 .😁 {
   color: hsl(49, 95%, 49%);

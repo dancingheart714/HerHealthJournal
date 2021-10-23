@@ -1,0 +1,18 @@
+.month-tracker-item {
+    width: 8rem;
+    height: 8rem;  
+    box-shadow: 0 0 0 1px #000;
+    cursor: pointer;
+  }
+  
+  .day-number {
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+
+
+
+

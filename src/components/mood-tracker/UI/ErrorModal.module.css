@@ -1,0 +1,53 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+  
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+  
+    text-align: center;
+  
+    background-color: #fff;
+    border-radius: 0.9rem;
+    padding: 6.4rem;
+  
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header h2 {
+    color: #d598a0;
+    font-size: 3.2rem;
+    font-style: italic;
+  }
+  
+  .content {
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 3.2rem;
+    font-style: italic;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.8rem;
+  
+    justify-content: center;
+  
+    font-size: 2rem;
+  }
+  
+  .error-date {
+    justify-content: center !important;
+  }

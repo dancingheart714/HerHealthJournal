@@ -1,6 +1,7 @@
-import Button from '../mood-tracker/Button';
-import Date from '../mood-tracker/Date';
-    
+import Button from './Button';
+import Date from './Date';
+import classes from './ErrorModal.module.css';
+
 const ErrorModal = (props) => {
     const confirm = () => {
       props.onConfirm();
@@ -8,19 +9,19 @@ const ErrorModal = (props) => {
   
     return (
       <div>
-        <div className="backdrop" onClick={confirm}></div>
-        <div className="modal">
-          <header className="header">
+        <div className={classes.backdrop} onClick={confirm}></div>
+        <div className={classes.modal}>
+          <header className={classes.header}>
             <h2>{props.title}</h2>
           </header>
   
-          <div className="content">
+          <div className={classes.content}>
             {props.date && (
-              <Date date={props.date} className="error-date" />
+              <Date date={props.date} className={classes['error-date']} />
             )}
             {!props.date && <p>{props.message}</p>}
           </div>
-          <footer className="actions">
+          <footer className={classes.actions}>
             <Button onClick={confirm}>Okay</Button>
           </footer>
         </div>
