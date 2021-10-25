@@ -6,7 +6,10 @@ import React, { useState } from 'react';
 import Header from './components/mood-tracker/UI/Header';
 import Moods from './components/mood-tracker/Moods/Moods';
 import NewMood from './components/mood-tracker/AddMood/NewMood';
-import MonthTracker from './components/mood-tracker/Tracker/MonthTracker';
+import Calendar from 'react-calendar';
+import './components/mood-tracker/UI/calendar.css';
+
+
 
 const App = () => {
   const sampleMoodsData = [];
@@ -93,6 +96,13 @@ const App = () => {
     addNewMoodHandler(mood, found);
   };
 
+  const [dateState, setDateState] = useState(new Date())
+
+  const changeDate = (e) => {
+    setDateState(e)
+  }
+
+
   return (
     <div>
       <Header />
@@ -103,11 +113,12 @@ const App = () => {
 
           <Moods items={moods} />
         </div>
-
-        <MonthTracker
-          moods={moodsForTracker}
-          addMoodWithItem={addMoodWithItemHandler}
-        />
+        <>
+        <Calendar
+          value={dateState}
+          onChange={changeDate}
+          />
+        </>
       </div>
     </div>
   );
